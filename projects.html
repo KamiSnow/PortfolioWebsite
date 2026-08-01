@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sidney</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="site-name">Sidney</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="projects-banner" style="background-color: #22124a; color: white; padding: 40px 20px; text-align: center; border-bottom: 2px dashed #b3a2d9;">
+        <div style="max-width: 1000px; margin: 0 auto 20px auto; overflow: hidden; border-radius: 8px;">
+            <img src="Projects/banner.jpg" alt="Projects Overview Banner" style="width: 100%; height: auto; display: block; object-fit: cover;">
+        </div>
+        <h1 style="font-size: 3rem; font-weight: 500; margin-bottom: 20px;">Projects</h1>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6; color: #dcd3ee;">
+            A collection of software systems and applications developed throughout my academic career, most of which were engineered in collaborative development teams. My work across these projects spans Mobile & Web Development, Data Science & Predictive Modeling, Computer Vision, and Database Management.
+        </p>
+    </header>
+
+    <div class="portfolio-container">
+
+        <div class="section-divider-title" style="margin-top: 40px;">
+            <h2>Web & Enterprise Systems</h2>
+        </div>
+
+        <section class="project-detail-section" style="width: 100%; max-width: 1000px; padding: 20px 0;">
+            <h1 style="font-size: 2.2rem; color: #3b2475; font-weight: bold; margin-bottom: 15px;">Thesis System</h1>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Project Overview</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    Developed as a flagship undergraduate thesis project, this web application addresses the challenges of localized weather forecasting by delivering high-accuracy meteorological predictions specifically for the Metro Manila area.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">The Problem & Solution</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    Standard macro-level weather models often struggle with the microclimates and rapid urban weather shifts in dense metropolitan areas. This system utilizes advanced data-driven modeling to process historical weather patterns, providing localized stakeholders with highly reliable, actionable forecasting.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Key Features & Implementation</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333; margin-bottom: 8px;">
+                    <strong>Dual-Aspect Forecasting:</strong> Simultaneously predicts both the quantitative probability of rain occurrence (%) and the exact expected rainfall volume (mm) for specific municipalities.
+                </p>
+                <ul style="list-style-type: disc; margin-left: 25px; font-size: 1rem; line-height: 1.6; color: #333333;">
+                    <li style="margin-bottom: 5px;"><strong>Two-Stage Predictive Modeling:</strong> Implements robust data-handling to minimize environmental noise and ensure stable algorithmic convergence.</li>
+                    <li><strong>Data Visualization:</strong> Features an intuitive dashboard designed to display meteorological trends cleanly for both technical and non-technical users.</li>
+                </ul>
+            </div>
+
+            <div class="project-image-box" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <img src="Projects/thesis1.jpg" alt="Metro Manila Rainfall Prediction Dashboard - Map View" style="max-width: 480px; width: 100%; border-radius: 8px;">
+                <img src="Projects/thesis2.jpg" alt="Rainfall Prediction Results and Model Performance Metrics" style="max-width: 480px; width: 100%; border-radius: 8px;">
+                <img src="Projects/thesis3.jpg" alt="Rainfall Forecast Data Table and Classification Details" style="max-width: 480px; width: 100%; border-radius: 8px;">
+            </div>
+        </section>
+
+        <hr class="project-separator">
+
+        <section class="project-detail-section" style="width: 100%; max-width: 1000px; padding: 20px 0;">
+            <h1 style="font-size: 2.2rem; color: #3b2475; font-weight: bold; margin-bottom: 15px;">MRP System</h1>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Project Overview</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    This web-based Material Requirements Planning (MRP) system was engineered as a comprehensive business operations project to simulate production logistics, inventory control, and supply chain management for a hypothetical corporation.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">The Problem & Solution</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    Manufacturing pipelines frequently bottleneck due to poor tracking of raw materials and mismatched production schedules. This application automates those calculations, linking product demand directly back to component availability to ensure seamless operational workflows.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Key Features & Implementation</h3>
+                <ul style="list-style-type: disc; margin-left: 25px; font-size: 1rem; line-height: 1.6; color: #333333;">
+                    <li style="margin-bottom: 5px;"><strong>Recipe & Formula Management:</strong> Centralizes the exact ingredient and component ratios required for a diverse catalog of finished products.</li>
+                    <li style="margin-bottom: 5px;"><strong>Dynamic Bill of Materials (BOM):</strong> Automatically generates structural lists of raw materials, assemblies, and sub-components needed to manufacture a specified volume of goods.</li>
+                    <li><strong>Real-Time Material Tracking:</strong> Features a live inventory ledger that updates automatically as production demands fluctuate, preventing stockouts and over-purchasing.</li>
+                </ul>
+            </div>
+
+            <div class="project-image-box" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <img src="Projects/mrp1.jpg" alt="MRP Navigation and Material Requirements Planning Overview" style="max-width: 480px; width: 100%; border-radius: 8px;">
+                <img src="Projects/mrp2.jpg" alt="Material Requirements Planning Table" style="max-width: 480px; width: 100%; border-radius: 8px;">
+                <img src="Projects/mrp3.jpg" alt="Product Pricing Dashboard" style="max-width: 480px; width: 100%; border-radius: 8px;">
+                <img src="Projects/mrp4.jpg" alt="Bill of Materials Document" style="max-width: 480px; width: 100%; border-radius: 8px;">
+                <img src="Projects/mrp5.jpg" alt="Product Materials List" style="max-width: 480px; width: 100%; border-radius: 8px;">
+            </div>
+        </section>
+
+        <hr class="project-separator">
+
+        <div class="section-divider-title">
+            <h2>Mobile Applications</h2>
+        </div>
+
+        <section class="project-detail-section" style="width: 100%; max-width: 1000px; padding: 20px 0;">
+            <h1 style="font-size: 2.2rem; color: #3b2475; font-weight: bold; margin-bottom: 15px;">Cosmic Combo</h1>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Project Overview</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    Cosmic Combo is an engaging, fast-paced mobile puzzle game that merges classic memory mechanics with a polished, deep-space visual theme.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">The Problem & Solution</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    Mobile casual games require immediate cognitive hooks and smooth rendering to keep players engaged. Cosmic Combo solves this by pairing low-latency, responsive touch mechanics with a captivating, cohesive aesthetic that rewards player progression.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Key Features & Implementation</h3>
+                <ul style="list-style-type: disc; margin-left: 25px; font-size: 1rem; line-height: 1.6; color: #333333;">
+                    <li style="margin-bottom: 5px;"><strong>Immersive Celestial Aesthetic:</strong> Built using a custom-designed user interface featuring vibrant space assets, smooth transitions, and thematic visual effects.</li>
+                    <li style="margin-bottom: 5px;"><strong>Dynamic State Management:</strong> Utilizes efficient card-state tracking to manage flips, matches, mismatches, and board resets smoothly without dropping frames.</li>
+                    <li><strong>Adaptive Difficulty:</strong> Features scalable grid layouts and progression levels that challenge a player's memory and speed over time.</li>
+                </ul>
+            </div>
+
+            <div class="project-image-box" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <img src="Projects/cosmic1.jpg" alt="Cosmic Combo Start Menu" style="max-width: 220px; width: 100%; border-radius: 8px;">
+                <img src="Projects/cosmic2.jpg" alt="Cosmic Combo Gameplay Board" style="max-width: 220px; width: 100%; border-radius: 8px;">
+                <img src="Projects/cosmic3.jpg" alt="Cosmic Combo Results Screen" style="max-width: 220px; width: 100%; border-radius: 8px;">
+                <img src="Projects/cosmic4.jpg" alt="Cosmic Combo Instructions Screen" style="max-width: 220px; width: 100%; border-radius: 8px;">
+            </div>
+        </section>
+
+        <hr class="project-separator">
+
+        <section class="project-detail-section" style="width: 100%; max-width: 1000px; padding: 20px 0;">
+            <h1 style="font-size: 2.2rem; color: #3b2475; font-weight: bold; margin-bottom: 15px;">Medi-Sync</h1>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Project Overview</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    Medi-Sync is a patient-centric mobile healthcare application dedicated to simplifying personal medication management and improving treatment adherence through intelligent automation.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">The Problem & Solution</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    Managing multiple prescription schedules, variable dosages, and strict timings can be overwhelming, frequently leading to missed doses. Medi-Sync minimizes human error by serving as a fail-safe digital assistant that tracks complex schedules seamlessly.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Key Features & Implementation</h3>
+                <ul style="list-style-type: disc; margin-left: 25px; font-size: 1rem; line-height: 1.6; color: #333333;">
+                    <li style="margin-bottom: 5px;"><strong>Automated Alert & Notification System:</strong> Deploys high-priority, persistent background alerts to ensure users are notified of their medication windows at the exact designated times.</li>
+                    <li style="margin-bottom: 5px;"><strong>Intelligent Schedule Tracking:</strong> Supports complex, customizable scheduling configurations—such as recurring intervals, specific days of the week, or changing dosage amounts.</li>
+                    <li><strong>Adherence Logging:</strong> Maintains a chronological history of taken or skipped medications, allowing users to keep an accurate record for their healthcare providers.</li>
+                </ul>
+            </div>
+
+            <div class="project-image-box" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <img src="Projects/med1.jpg" alt="Medi-Sync Welcome Screen" style="max-width: 220px; width: 100%; border-radius: 8px;">
+                <img src="Projects/med2.jpg" alt="Medi-Sync Prescription Reminders List" style="max-width: 220px; width: 100%; border-radius: 8px;">
+                <img src="Projects/med3.jpg" alt="Medi-Sync Add Medicine Screen" style="max-width: 220px; width: 100%; border-radius: 8px;">
+                <img src="Projects/med4.jpg" alt="Medi-Sync Prescription Details View" style="max-width: 220px; width: 100%; border-radius: 8px;">
+            </div>
+        </section>
+
+        <hr class="project-separator">
+
+        <section class="project-detail-section" style="width: 100%; max-width: 1000px; padding: 20px 0;">
+            <h1 style="font-size: 2.2rem; color: #3b2475; font-weight: bold; margin-bottom: 15px;">Unscramble 60</h1>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Project Overview</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    Unscramble is an interactive, educational mobile word game specifically designed to gamify technical learning and bridge the knowledge gap for individuals entering the technology sector.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">The Problem & Solution</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">
+                    The Information Technology industry is notorious for its steep learning curve, heavily relying on a massive sea of complex jargon, acronyms, and technical concepts. Unscramble transforms this intimidating vocabulary into an engaging, accessible learning experience through puzzle-based reinforcement.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h3 style="font-size: 1.1rem; color: #3b2475; font-weight: 600; margin-bottom: 5px;">Key Features & Implementation</h3>
+                <ul style="list-style-type: disc; margin-left: 25px; font-size: 1rem; line-height: 1.6; color: #333333;">
+                    <li style="margin-bottom: 5px;"><strong>Curated Tech Dictionary Puzzles:</strong> Features an expansive database of industry-standard jargon spanning software development, network engineering, data science, and cybersecurity.</li>
+                    <li style="margin-bottom: 5px;"><strong>Gamified Learning Mechanics:</strong> Utilizes anagram unscrambling, timed challenges, and hint systems to keep players cognitively engaged while building vocabulary retention.</li>
+                    <li><strong>Contextual Definitions:</strong> Providing the correct spelling is only half the battle; once a word is solved, the system displays a concise, practical breakdown of the term's meaning and real-world application.</li>
+                </ul>
+            </div>
+
+            <div class="project-image-box" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <img src="Projects/unscr1.jpg" alt="Unscramble 60 Login Screen" style="max-width: 220px; width: 100%; border-radius: 8px;">
+                <img src="Projects/unscr2.jpg" alt="Unscramble 60 Category Selection Screen" style="max-width: 220px; width: 100%; border-radius: 8px;">
+                <img src="Projects/unscr3.jpg" alt="Unscramble 60 Gameplay Grid" style="max-width: 220px; width: 100%; border-radius: 8px;">
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-left">
+                &copy; 2026 Sidney. All rights reserved.<br>
+                Built using <a href="https://animejs.com/" target="_blank">Anime.js</a>
+            </div>
+            <div class="footer-right">
+                Contact: email@example.com<br>
+                Manila, Philippines
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

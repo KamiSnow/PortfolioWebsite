@@ -1,0 +1,374 @@
+/* ==========================================================================
+   1. Core Base Styles & Navigation
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #faf9fc; /* Soft neutral tinted off-white background */
+}
+
+.navbar {
+    background-color: #2b1a54; /* Deep slate purple */
+    color: white;
+    padding: 15px 0;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.site-name {
+    font-size: 1.1rem;
+    color: #c7badf;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #c7badf;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   2. Profile & Details Header Sections
+   ========================================================================== */
+.portfolio-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.details-section {
+    width: 100%;
+    background-color: #eae5f4; /* Reconfigured professional light-lavender tint */
+    padding: 50px 20px;
+    text-align: center;
+    color: #2b1a54;
+    border-top: 2px dashed #c7badf;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: inline-block; /* Essential for Anime.js letter splitting calculations */
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #170d33;
+}
+
+.college-name {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    color: #4a3675;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #2b1a54;
+}
+
+.resume-btn {
+    display: inline-block;
+    background-color: #523b8a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    width: 100%;
+    max-width: 600px;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.resume-btn:hover {
+    background-color: #3f2c6b;
+}
+
+/* Centralized Description Styling */
+.profile-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333333;
+    text-align: justify; /* Perfectly justified alignment requirement */
+    max-width: 850px;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   3. Featured Large Projects Row Layout
+   ========================================================================== */
+.section-divider-title {
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px 20px 10px 20px;
+    font-size: 1.4rem;
+    color: #2b1a54;
+    text-align: left;
+    font-weight: 600;
+}
+
+.project-row {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px 20px;
+    gap: 40px;
+    align-items: center;
+}
+
+.project-image-box {
+    flex: 1.2;
+}
+
+.project-image-box img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #e1dce9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.project-text-box {
+    flex: 1;
+    color: #333333;
+}
+
+.project-text-box h2 {
+    color: #2b1a54;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.project-text-box p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.project-separator {
+    width: 95%;
+    border: none;
+    border-top: 1px dashed #c7badf;
+    margin: 30px 0 10px 0;
+}
+
+/* ==========================================================================
+   4. Control Interface Panel Styling
+   ========================================================================== */
+.controls {
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 20px 20px 20px;
+    text-align: left;
+}
+
+.controls button {
+    background-color: #2b1a54;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.controls button:hover {
+    background-color: #4a3675;
+}
+
+/* ==========================================================================
+   5. Dynamic Morphing Layout Architecture (Anime.js FLIP Contexts)
+   ========================================================================== */
+.layout-container {
+    position: relative !important;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px 50px 20px;
+    transition: none !important; /* Prevents native transitions from fighting Anime.js */
+}
+
+/* Base structural assignments for items inside the container */
+.layout-container .item {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.layout-container .card-image-box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.layout-container .card-image-box img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.layout-container h3 {
+    color: #2b1a54;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.layout-container p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444444;
+}
+
+/* --- STATE CLASS DEFINITIONS (Updated Dynamically via JS) --- */
+
+/* Horizontal Row Settings (3 Columns Side-by-Side) */
+.layout-container.flex-row,
+.layout-container.flex-col,
+.layout-container.grid-2 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+}
+
+/* Stacker settings (1 Column List Layout View) */
+.layout-container.grid-1 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    max-width: 650px !important;
+}
+
+/* Clean minimization handling state */
+.layout-container.none .item {
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* Reverse ordering setup mapping class */
+.layout-container.flex-row-reverse {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+}
+
+/* ==========================================================================
+   6. Footer & Media Query Clean Breakdowns
+   ========================================================================== */
+.site-footer {
+    background-color: #eae5f4; 
+    border-top: 2px dashed #c7badf;
+    padding: 40px 0;
+    margin-top: 60px;
+    color: #2b1a54;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-left a {
+    color: #2b1a54;
+    text-decoration: underline;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .project-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-text-box p {
+        text-align: center;
+    }
+    
+    .layout-container.flex-row,
+    .layout-container.flex-col,
+    .layout-container.grid-2,
+    .layout-container.grid-1,
+    .layout-container.flex-row-reverse {
+        grid-template-columns: 1fr !important;
+        gap: 45px !important;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-right {
+        text-align: center;
+    }
+}

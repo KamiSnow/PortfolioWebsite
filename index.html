@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidney - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="site-name">Sidney</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="portfolio-container">
+
+        <div class="image-section">
+            <img src="assets/profile.jpg" alt="Sidney" class="profile-img">
+        </div>
+
+        <div class="details-section">
+            <h1 class="profile-name" style="color: #3b2475;">Sidney</h1>
+            <div class="profile-title" style="color: #333333;">Graduate of Computer Science</div>
+            <div class="college-name" style="color: #8a7bb0;">Collage</div>
+
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" style="color: #3b2475;"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <a href="#" class="resume-btn" style="background-color: #22124a; color: white; border-radius: 6px; padding: 10px 20px; display: inline-block; text-decoration: none; margin-top: 10px;">View Resume</a>
+        </div>
+
+        <p class="profile-description" style="font-size: 1rem; line-height: 1.6; color: #333333;">
+            He is an experienced software developer with a strong foundation in Python, Java, and SQL databases (PostgreSQL/MySQL). Having previously interned at Lay Bare Corporation, he has a proven track record of building complex database architectures, enterprise modules, and desktop applications. By blending technical backend expertise with UX design principles, he focuses on delivering software that is as secure and efficient as it is user-friendly.
+        </p>
+
+        <div class="section-divider-title">
+            <h2>Featured Projects</h2>
+        </div>
+
+        <div class="project-row">
+            <div class="project-image-box">
+                <img src="Projects/thesis1.jpg" alt="Rainfall Prediction Dashboard">
+            </div>
+            <div class="project-text-box">
+                <h2 style="color: #3b2475; font-weight: 700;">Rainfall Prediction</h2>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">Developed as an undergraduate thesis project, this web application specializes in high-accuracy meteorological forecasting for the Metro Manila area. The system provides real-time insights by predicting both the rainfall levels and pattern shifts across regional spheres of influence.</p>
+                <a href="projects.html" style="color: #3b2475; font-weight: 600; text-decoration: none;">View project details &rarr;</a>
+            </div>
+        </div>
+
+        <hr class="project-separator">
+
+        <div class="project-row">
+            <div class="project-image-box">
+                <img src="Projects/mrp1.jpg" alt="Material Requirements Planning Dashboard">
+            </div>
+            <div class="project-text-box">
+                <h2 style="color: #3b2475; font-weight: 700;">Material Requirements Planning</h2>
+                <p style="font-size: 1rem; line-height: 1.6; color: #333333;">Built as an enterprise-grade inventory and manufacturing resource planning tool. This application tracks supply chain pipelines, production scheduling, and material availability to automate procurement cycles and optimize stock levels seamlessly.</p>
+                <a href="projects.html" style="color: #3b2475; font-weight: 600; text-decoration: none;">View project details &rarr;</a>
+            </div>
+        </div>
+
+        <hr class="project-separator">
+
+        <div class="section-divider-title">
+            <h2>Mobile Projects</h2>
+        </div>
+
+        <div class="layout-container flex-row">
+
+            <div class="item project-card">
+                <div class="card-image-box">
+                    <img src="Projects/cosmic1.jpg" alt="Cosmic Combo App Screenshot">
+                </div>
+                <h3 style="color: #3b2475; font-weight: 700;">Cosmic Combo</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #333333;">Cosmic Combo is a vibrant mobile card-matching game set against an immersive, deep-space aesthetic. Designed for quick engagement, it combines classic memory-matching mechanics with a sleek, celestial visual theme.</p>
+            </div>
+
+            <div class="item project-card">
+                <div class="card-image-box">
+                    <img src="Projects/med1.jpg" alt="Medi-Sync App Screenshot">
+                </div>
+                <h3 style="color: #3b2475; font-weight: 700;">Medi-Sync</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #333333;">Medi-Sync is a dedicated mobile healthcare application designed to streamline personal medication management. The platform tracks complex prescription schedules and deploys automated alerts to ensure users take the correct dosages at precise times.</p>
+            </div>
+
+            <div class="item project-card">
+                <div class="card-image-box">
+                    <img src="Projects/unscr1.jpg" alt="Unscramble 60 App Screenshot">
+                </div>
+                <h3 style="color: #3b2475; font-weight: 700;">Unscramble 60</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #333333;">Unscramble 60 is an educational mobile word game designed to gamify technical learning. It challenges players to decode puzzles while introducing them to essential terminology, acronyms, and jargon used across the Information Technology industry.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-left">
+                &copy; 2026 Sidney. All rights reserved.<br>
+                Built using <a href="https://animejs.com/" target="_blank">Anime.js</a>
+            </div>
+            <div class="footer-right">
+                Contact: email@example.com<br>
+                Manila, Philippines
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
