@@ -68,34 +68,36 @@ if ($button) {
 }
 
 // ==========================================================================
-// Dark Mode Toggle Logic
+// Safe, Global Dark Mode Toggle Logic
 // ==========================================================================
-const themeToggleBtn = document.getElementById('theme-toggle');
-const themeIcon = themeToggleBtn?.querySelector('i');
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = themeToggleBtn?.querySelector('i');
 
-// Check saved user preference or system preference on load
-const savedTheme = localStorage.getItem('theme');
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Load saved preference or default to system theme
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-    document.body.classList.add('dark-mode');
-    if (themeIcon) themeIcon.className = 'fas fa-sun';
-}
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.body.classList.add('dark-mode');
+        if (themeIcon) themeIcon.className = 'fas fa-sun';
+    }
 
-if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        const isDark = document.body.classList.contains('dark-mode');
-        
-        // Update Icon
-        if (themeIcon) {
-            themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
-        }
-        
-        // Persist Preference
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-}
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            
+            // Switch icon between Sun and Moon
+            if (themeIcon) {
+                themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+            }
+            
+            // Save state so it persists across page navigation
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    }
+});
 
 // ==========================================================================
 // 3. Interactive Component Drag Configuration Constraints
